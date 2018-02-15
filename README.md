@@ -4,7 +4,7 @@ To learn more about this project, check out this [article](https://blog.graph.co
 
 ## Usage
 
-Clone repository and deploy Prisma service:
+### 1. Clone repository & deploy Prisma service
 
 ```sh
 git clone git@github.com:nikolasburk/blogr.git
@@ -13,6 +13,8 @@ prisma deploy
 ```
 
 When prompted where (i.e. to which _cluster_) you want to deploy your service, choose any of the development clusters, e.g. `public-us1` or `public-eu1`. (If you have Docker installed, you can also deploy locally.)
+
+### 2. Set Prisma endpoint
 
 From the output of the previous command, copy the `HTTP` endpoint and paste it into `src/index.js` where it's used to instantiate the `Prisma` binding. You need to replace the current placeholder `__PRISMA_ENDPOINT__`:
 
@@ -47,3 +49,13 @@ const server = new GraphQLServer({
   }),
 })
 ```
+
+### 3. Start the server
+
+Now, you can start the server:
+
+```sh
+node src/index.js
+```
+
+For more info, see [here](To learn more about this project, check out this [article](https://blog.graph.cool/tutorial-building-a-graphql-server-with-graphql-yoga-6da86f346e68).).
