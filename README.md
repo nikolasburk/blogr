@@ -58,4 +58,4 @@ Now, you can start the server:
 node src/index.js
 ```
 
-For more info, see [here](To learn more about this project, check out this [article](https://blog.graph.cool/tutorial-building-a-graphql-server-with-graphql-yoga-6da86f346e68).).
+For more info, see [here](https://blog.graph.cool/tutorial-building-a-graphql-server-with-graphql-yoga-6da86f346e68).).
