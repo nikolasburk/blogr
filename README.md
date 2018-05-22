@@ -12,7 +12,7 @@ cd blogr
 prisma deploy
 ```
 
-When prompted where (i.e. to which _cluster_) you want to deploy your service, choose any of the development clusters, e.g. `public-us1` or `public-eu1`. (If you have Docker installed, you can also deploy locally.)
+When prompted where (i.e. to which _Prisma server_) you want to deploy your service, select the **Demo server**. For all subsequent questions you can simply choose the suggested values by hitting **Enter**. (Note that if you have Docker installed, you can also deploy locally.)
 
 ### 2. Set Prisma endpoint
 
@@ -27,7 +27,6 @@ const server = new GraphQLServer({
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
       endpoint: '__PRISMA_ENDPOINT__',
-      secret: 'mysecret123',
     }),
   }),
 })
@@ -43,8 +42,7 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: 'https://eu1.prisma.sh/public-hillcloak-flier-942261/hackernews-graphql-js/dev',
-      secret: 'mysecret123',
+      endpoint: 'https://eu1.prisma.sh/jane-doe/database/dev',
     }),
   }),
 })
