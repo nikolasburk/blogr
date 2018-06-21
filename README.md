@@ -1,6 +1,6 @@
 # Blogr - A simple blogging API
 
-To learn more about this project, check out this [article](https://blog.graph.cool/tutorial-building-a-graphql-server-with-graphql-yoga-6da86f346e68).
+To learn more about this project, check out this [article](https://www.prisma.io/docs/tutorials/build-graphql-servers/development/build-a-graphql-server-from-scratch-nahgaghei6).
 
 ## Usage
 
@@ -56,4 +56,4 @@ Now, you can start the server:
 node src/index.js
 ```
 
-For more info, see [here](https://blog.graph.cool/tutorial-building-a-graphql-server-with-graphql-yoga-6da86f346e68).
+For more info, see [here](https://www.prisma.io/docs/tutorials/build-graphql-servers/development/build-a-graphql-server-from-scratch-nahgaghei6).
